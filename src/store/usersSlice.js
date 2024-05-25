@@ -1,7 +1,9 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
 
-const host = "http://13.49.102.155:3001";
+//const host = "http://13.49.102.155:3001";
+const host = "http://localhost:3001";
+
 // Async thunk to fetch users
 export const fetchUsers = createAsyncThunk('users/fetchUsers', async () => {
   try {
@@ -66,7 +68,7 @@ export const saveUser = createAsyncThunk('users/saveUser', async (newUser) => {
       throw new Error('Failed to save user');
     }
     const data = await response.json();
-    alert("The user has been saved successfully");
+    //alert("The user has been saved successfully");
     return data.savedUser; // Assuming the backend returns the saved user object
   } catch (error) {
     throw new Error(error.message);
