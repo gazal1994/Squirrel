@@ -1,5 +1,8 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
+
+
+const host = "http://localhost:3001";
 // Async thunk to fetch users
 export const fetchUsers = createAsyncThunk('users/fetchUsers', async () => {
   try {
@@ -17,7 +20,7 @@ export const fetchUsers = createAsyncThunk('users/fetchUsers', async () => {
 // Async thunk to fetch saved users from the backend
 export const fetchSavedUsers = createAsyncThunk('users/fetchSavedUsers', async () => {
   try {
-    const response = await fetch('http://localhost:3001/api/users');
+    const response = await fetch(host , '/api/users');
     if (!response.ok) {
       throw new Error('Failed to fetch users');
     }
@@ -32,7 +35,7 @@ export const fetchSavedUsers = createAsyncThunk('users/fetchSavedUsers', async (
 export const updateUser = createAsyncThunk('users/updateUser', async (updatedUser) => {
   try {
     console.log(updatedUser);
-    const response = await fetch(`http://localhost:3001/api/update-user/${updatedUser.id}`, {
+    const response = await fetch(host, `/api/update-user/${updatedUser.id}`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',
@@ -52,7 +55,7 @@ export const updateUser = createAsyncThunk('users/updateUser', async (updatedUse
 // Async thunk to save a new user
 export const saveUser = createAsyncThunk('users/saveUser', async (newUser) => {
   try {
-    const response = await fetch('http://localhost:3001/api/save-user', {
+    const response = await fetch(host , '/api/save-user', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -74,7 +77,7 @@ export const saveUser = createAsyncThunk('users/saveUser', async (newUser) => {
 // Async thunk to delete a user
 export const deleteUserFromServer = createAsyncThunk('users/deleteUserFromServer', async (userId) => {
   try {
-    const response = await fetch(`http://localhost:3001/api/delete-user/${userId}`, {
+    const response = await fetch(host , `/api/delete-user/${userId}`, {
       method: 'DELETE',
     });
     if (!response.ok) {
