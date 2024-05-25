@@ -1,0 +1,84 @@
+.fullProfileContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .profileCard {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    max-width: 700px;
+    width: 90%;
+    max-height: 90%;
+    overflow-y: auto;
+  }
+  
+  .closeButton {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    color: #666;
+    cursor: pointer;
+  }
+  
+  .profileImage {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+    display: block;
+    margin: 0 auto 30px;
+  }
+  
+  .editButton,
+  .saveButton {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .inputField {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+    font-size: 16px;
+  }
+  
+  .infoText {
+    margin-bottom: 20px;
+    font-size: 12px;
+    color: #333;
+    text-align: center;
+  }
+  
+  .nameContainer,
+  .inputContainer {
+    display: flex;
+    align-items: center;
+  }
+  
+  .inputContainer {
+    justify-content: space-between;
+  }
+  
+  .inputField.saveButton {
+    width: calc(100% - 100px); /* Adjust based on your button width */
+  }
+  

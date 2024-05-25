@@ -1,0 +1,118 @@
+.profile {
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  color: rgb(255, 255, 255); /* Font color set to black */
+}
+
+.profile h2 {
+  color: white;
+  margin-bottom: 20px;
+}
+
+.profile button {
+  background-color: #0073b1;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.profile button:hover {
+  background-color: #005a8e;
+}
+
+.profile label {
+  font-weight: bold;
+  color: white;
+  margin-right: 10px;
+}
+
+.profile input {
+  padding: 8px;
+  margin-left: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.profile .filterContainer {
+  margin-bottom: 20px;
+}
+
+.profile .filterContainer label {
+  display: block;
+}
+
+.profile .filterContainer input {
+  width: 100%;
+}
+
+.profile ul {
+  list-style: none;
+  padding: 0;
+}
+
+.profile .userContainer {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.profile .userRow {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.profile .userThumbnail {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.profile .userDetails {
+  flex: 1;
+}
+
+.profile .userDetails p {
+  margin: 5px 0;
+  color: #194a72;
+}
+
+.profile .addButton,
+.profile .deleteButton {
+  background-color: transparent;
+  color: #0073b1;
+  border: 1px solid #0073b1;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.profile .addButton:hover,
+.profile .deleteButton:hover {
+  background-color: #0073b1;
+  color: #25973f;
+}
+
+.profile .addButton {
+  margin-right: 10px;
+}
+
+.profile .deleteButton {
+  margin-left: 10px;
+}
+
+.profile .blue {
+  color: blue;
+}
+
+.profile .red {
+  color: red;
+}
