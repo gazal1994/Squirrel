@@ -1,9 +1,9 @@
 import React, { useState, useMemo , useEffect} from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchUsers, fetchSavedUsers , deleteUserFromServer , updateUser , updateUserDetails} from '../store/usersSlice';
-import UserList from './UserList';
+import { fetchUsers, fetchSavedUsers , deleteUserFromServer , updateUser , updateUserDetails} from '../../store/usersSlice';
+import UserList from '../UserList/UserList';
 import classes from './UserProfile.module.css';
-import FullProfileScreen from './FullProfileScreen';
+import FullProfileScreen from '../FullProfileScreen/FullProfileScreen';
 
 const UserProfile = () => {
   const dispatch = useDispatch();

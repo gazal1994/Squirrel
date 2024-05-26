@@ -1,8 +1,8 @@
 // UserList.js
 import React from 'react';
 import { useDispatch } from 'react-redux';
-import { addUser, deleteUser } from '../store/usersSlice';
-import FullProfileScreen from './FullProfileScreen';
+import { addUser, deleteUser } from '../../store/usersSlice';
+import FullProfileScreen from '../FullProfileScreen/FullProfileScreen';
 import classes from './UserList.module.css';
 
 const UserList = ({ users, handleRowClick, handleAddUser, handleDeleteUser }) => {

@@ -1,7 +1,7 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
 
-const host = "http://13.49.102.155:3001";
+const host = "http://16.16.205.225:3001";
 //const host = "http://localhost:3001";
 
 // Async thunk to fetch users

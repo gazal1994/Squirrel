@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './NameEditPopup.module.css'; // Import the CSS module
+import styles from './../NameEditPopup/NameEditPopup.module.css'; // Import the CSS module
 
 const NameEditPopup = ({ editedName, onChange, onSave, onClose }) => {
   return (

@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import styles from './FullProfileScreen.module.css';
-import NameEditPopup from './NameEditPopup';
-import { saveUser } from '../store/usersSlice'; // Import the saveUser action
+import NameEditPopup from '../NameEditPopup/NameEditPopup';
+import { saveUser } from '../../store/usersSlice'; // Import the saveUser action
 
 const FullProfileScreen = ({ user, onClose, onDelete, onUpdate, onBack }) => {
   const [isEditingName, setIsEditingName] = useState(false);
